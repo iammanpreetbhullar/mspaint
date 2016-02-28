@@ -1,0 +1,13 @@
+node_modules/
+build/
+switch_file.txt
+
+perf/
+
+.sass-cache/
+
+*~
+*.map
+
+*.sublime-workspace
+
