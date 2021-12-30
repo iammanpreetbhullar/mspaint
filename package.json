@@ -1,52 +1,35 @@
 {
-  "name": "jspaint",
-  "version": "0.2.6",
-  "description": "Paint in browser.",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "grunt release-the-hounds"
-  },
+  "name": "@f0c1s/jspaint",
+  "version": "2021.5.0-4",
+  "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/IAmAnubhavSaini/jspaint.git"
   },
   "keywords": [
     "javascript",
-    "jquery",
     "paint",
     "paint-application",
     "free-paint",
     "free",
     "online-paint"
   ],
-  "author": "Anubhav Saini <IAmAnubhavSaini@GMail.com>",
-  "license": "GPL",
+  "author": "Anubhav",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/IAmAnubhavSaini/jspaint/issues"
   },
-  "homepage": "https://github.com/IAmAnubhavSaini/jspaint",
-  "dependencies": {
-    "blanket": "*",
-    "bootstrap": "*",
-    "chai": "*",
-    "jquery": "*",
-    "mocha": "*"
-  },
+  "homepage": "https://iamanubhavsaini.github.io/jspaint",
   "devDependencies": {
-    "grunt": "*",
-    "grunt-autoprefixer": "*",
-    "grunt-bootlint": "*",
-    "grunt-contrib-copy": "*",
-    "grunt-contrib-cssmin": "*",
-    "grunt-contrib-imagemin": "*",
-    "grunt-contrib-jasmine": "*",
-    "grunt-contrib-jshint": "*",
-    "grunt-contrib-nodeunit": "*",
-    "grunt-contrib-sass": "*",
-    "grunt-contrib-uglify": "*",
-    "grunt-text-replace": "*"
+    "@types/node": "^15.12.2",
+    "browserify": "^17.0.0",
+    "gh-pages": "^3.2.1"
+  },
+  "dependencies": {
+    "canvas-js": "^8.0.0"
+  },
+  "scripts": {
+    "build": "browserify src/jspaint.js -o dist/jspaint.js",
+    "push": "npm run build && cp index.html dist/index.html && gh-pages -d dist"
   }
 }

@@ -1,32 +1,21 @@
-[![Build Status](https://travis-ci.org/IAmAnubhavSaini/jspaint.svg)](https://travis-ci.org/IAmAnubhavSaini/jspaint)
+# jspaint
 
-[![Coverage Status](https://coveralls.io/repos/github/IAmAnubhavSaini/jspaint/badge.svg?branch=master)](https://coveralls.io/github/IAmAnubhavSaini/jspaint?branch=master)
+paint application
 
-<hr />
+- [App](https://iamanubhavsaini.github.io/jspaint)
+- [GitHub](https://github.com/IAmAnubhavSaini/jspaint)
+- [NPM](https://www.npmjs.com/package/@f0c1s/jspaint)
 
-<h1>jspaint: Paint application in your browser.</h1>
+v2021.2.0
 
-Online application URLs : [jspaint](http://jspaint.github.io)  
+## Related Dependencies
 
+| name      | GitHub                                                 | NPM                                               |
+| --------- | ------------------------------------------------------ | ------------------------------------------------- |
+| canvas-js | [______](https://github.com/IAmAnubhavSaini/canvas-js) | [______](https://www.npmjs.com/package/canvas-js) |
 
-<h1>How to build the repo</h1>
-1. Clone repository (or download zip)  
-2. `npm install`  
-3. `grunt`  
-4. or you can test via `npm test`
+## LICENSE
 
+MIT
 
-This will make a `build/` directory.    
-
-
-
-License
----
-
-GPL v3.0
-
-JSPAINT  Copyright (C) 2015-2016  Anubhav Saini
-
-
-
-
+- &copy; 2015-2021 Anubhav
